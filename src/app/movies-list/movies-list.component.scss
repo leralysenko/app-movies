@@ -1,0 +1,15 @@
+.mat-form-field {
+    margin: 10px;
+}
+mat-card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 300px;
+    img {
+        width: 200px;
+    }
+}

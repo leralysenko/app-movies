@@ -1,0 +1,22 @@
+
+<mat-card>
+  <div class="poster">
+      <img src="./../../assets/images/movie-covers/{{movie.img}}" alt="#">
+  </div>
+  <div class="info">
+    <div class="name">{{movie.name}}</div>
+    <div class="description">Description: {{movie.description}}</div>
+    <div class="genres">
+      Genres:
+      <ul>
+        <li *ngFor="let genre of movie.genres">{{genre}}</li>
+      </ul>
+    </div>
+    <div class="rate">
+      Rate: {{movie.rate}}
+    </div>
+    <div class="length">Length: {{movie.length}}</div>
+    <button mat-stroked-button [routerLink]="['/movies']">Back</button>
+  </div>
+  
+</mat-card>
