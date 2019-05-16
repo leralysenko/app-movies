@@ -6,7 +6,7 @@
   </mat-form-field>
   <mat-form-field>
       <mat-label>Genre</mat-label>
-      <mat-select [(ngModel)]="selectedGenreType" (ngModelChange)="handleFieldChange($event)">
+      <mat-select [(ngModel)]="selectedGenreType" (ngModelChange)="handleFieldChange($event)" name="selectedGenre">
         <mat-option *ngFor="let type of genreTypes" [value]="type">
           {{type}}
         </mat-option>
